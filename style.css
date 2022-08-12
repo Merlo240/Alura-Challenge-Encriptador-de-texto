@@ -34,27 +34,12 @@ body {
   /* background: gold; */
 }
 .title {
-  overflow: hidden;
   margin-left: 30%;
   /* background: gold; */
   margin-top: 15px;
-  white-space: nowrap;
-border-right: 0.15em solid #18bdec;
-animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+
 }
-@keyframes typing {
-from {
-width: 0;
-}
-to {
-width: 23%;
-}
-}
-@keyframes blink {
-50% {
-border-color: transparent;
-}
-}
+
 .content {
   /* background: blue; */
   margin-top: 1%;
