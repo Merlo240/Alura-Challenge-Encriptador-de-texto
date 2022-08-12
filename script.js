@@ -12,15 +12,12 @@ let PALABRASRESERVADAS = {
       document.getElementById("validar").style.display = "block";
  return false;
 }
-    palabra = palabra.split("");
-    for (let index = 0; index < palabra.length; index++) {
-      for (const prop in PALABRASRESERVADAS) {
-        // console.log(`${'a'} = ${PALABRASRESERVADAS['a']}`);
-        if (palabra[index] == prop) {
-          palabra[index] = PALABRASRESERVADAS[prop];
-        }
-      }
-    }
+for (const prop in PALABRASRESERVADAS) {
+
+  palabra = palabra.normalize("NFD").replace(new RegExp(`${prop}`, "gi"), [
+  PALABRASRESERVADAS[prop],
+  ]);
+}
 
     let img = document.getElementById("Img-right");
     let txt = document.getElementById("text");
@@ -34,7 +31,7 @@ let PALABRASRESERVADAS = {
     }
    
     document.getElementById("text2").style.height = "460px"
-    document.getElementById("text2").innerHTML = palabra.join("");
+    document.getElementById("text2").innerHTML = palabra;
     document.getElementById("btn-copiar").style.display = "show";
     document.getElementById("btn-copiar").style.display = "inherit";
   }
