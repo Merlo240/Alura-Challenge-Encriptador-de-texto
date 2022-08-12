@@ -206,17 +206,16 @@ textarea::placeholder {
   text-align: center;
   font-size: 14px;
 }
-
 .btn-copy {
     display: flex;
     justify-content: center;
     margin-top: 25px;
   } 
+
 #btn-copiar {
   background-color: #d8dfe8;
   border-radius: 28px;
   border: 1px solid #d8dfe8;
-  display: inline-block;
   cursor: pointer;
   border: 1px solid #0a3871;
   color: #0a3871;
@@ -255,6 +254,7 @@ textarea::placeholder {
       "right-content" auto
       "footer" auto;
   }
+  
   .btn-copy{
     margin-bottom: 18px;
   }
@@ -297,6 +297,7 @@ textarea::placeholder {
   .btn-copy{
     margin-bottom: 18px;
   }
+
   .c-right {
     /* background-color: rgb(139, 109, 61); */
     border-radius: 28px;
@@ -328,12 +329,8 @@ textarea::placeholder {
       "left-content  left-content right-content" 640px
       "footer footer footer" /599px 400px;
   }
-
-  /* .btn-copy {
-    position: static;
-    
-    right: 50px;
-  } */
+ 
+  
   #text2 {
     margin-top: 5px;
   }
