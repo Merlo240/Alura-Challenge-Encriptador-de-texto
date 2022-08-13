@@ -160,6 +160,7 @@ textarea::placeholder {
   font-size: x-large;
   text-align: center;
   display: block;
+  
 }
 #text2 {
   margin-left: 6%;
@@ -253,7 +254,13 @@ textarea::placeholder {
       "right-content" auto
       "footer" auto;
   }
-  
+  #text {
+    margin-top: 12px; 
+}
+    
+  .right-content {
+    margin-top: 13px;
+  }
   .btn-copy{
     margin-bottom: 18px;
   }
