@@ -243,7 +243,7 @@ textarea::placeholder {
   background-color: fuchsia;
 } */
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (max-width: 768px) {
   /* Modo mobile */
   .grid-container {
     display: grid;
